@@ -1,7 +1,8 @@
-import { useState } from "react";
+import GameSetup from "./GameSetup";
+import "./styles/styles.scss";
 
 function App() {
-  return <>Hello world!</>;
+  return <GameSetup />;
 }
 
 export default App;

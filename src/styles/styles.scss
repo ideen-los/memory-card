@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+.deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+
+  padding: 40px;
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 280px;
+    height: 350px;
+
+    font-size: 40px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    transition: box-shadow 0.3s, transform 0.3s;
+    transform: scale(0.99);
+
+    cursor: pointer;
+
+    &.visible {
+      color: #fff;
+      background-color: hotpink;
+    }
+
+    &:hover {
+      box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 44px;
+      transform: scale(1);
+    }
+  }
+}
